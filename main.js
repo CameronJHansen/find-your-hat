@@ -124,7 +124,8 @@ class Field {
         if (
           arr[i][j] != pathCharacter &&
           arr[i][j] != hat &&
-          randomNumber3 === 5) {
+          randomNumber3 === 5
+	) {
             arr[i][j] = hole; //1 in 7 chance each array element of '░' substituted with 'O'
           }
       }
@@ -140,5 +141,3 @@ const myField = new Field(fieldArr);
 myField.print();
 
 myField.ask();
-
-
